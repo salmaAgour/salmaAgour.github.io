@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="myFirstForm.css">
+    </head>
+    <body>
+        <h1>Mon premier formulaire</h1>
+        <form action="destination.php" method="post">
+            <fieldset id="externe"><legend>Vos donnees personnelles</legend>
+            <label for="nom">Nom(*)</label>
+            <input type="text" required placeholder="Ecrivez votre nom" name="nom" id="nom"><br>
+            <label for="prenom">Prenom(*)</label>
+            <input type="text" required placeholder="Ecrivez votre prenom" name="prenom" id="prenom"><br>
+            <label for="date">Date de naissance</label>
+            <input type="date">
+        <fieldset>
+            <legend>Lieu de naissance</legend>
+
+                <input type="radio" id="denis" name="lieu">
+                <label for="denis">Seine Seint-denis</label>
+                <input type="radio" id="reste" name="lieu">
+                <label for="reste">Reste du monde</label>
+            
+        </fieldset>
+        
+            <label for="adress" id="ad">Adress</label>
+            <textarea name="adress" id="adress" cols="50" rows="8"></textarea><br>
+            <label for="poste">Code postal</label>
+            <input type="number" id="poste" name="poste" max="91000" min="90000" step="10"><br>
+            <label for="semestre">Semestre</label>
+            <select name="semestre" id="semestre">
+                <option>semestre 1</option>
+                <option>semestre 2</option>
+                <option>semestre 3</option>
+                <option>semestre 4</option>
+            </select><br>
+            <label for="niveau">Niveau en HTML</label>
+            <input type="range" name="niveau" id="niveau" min="1" max="10" step="1"><br>
+            <fieldset id="connaissance">
+                <legend>Connaissances en HTML</legend>
+                <input type="checkbox" name="html" id="html">
+                <label for="html"> HTML</label>
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="formulaire" id="formulaire">
+                <label for="formulaire">Formulaires</label>
+                <input type="checkbox" name="js" id="js">
+                <label for="js">JavaScript</label>
+            </fieldset><br>
+        
+        <p>*Les champs marques par une etoile sont obligatoires</p>
+        <input type="submit" value="Envoyer" class="end">
+        <input type="reset" value="Reinitialiser" class="end"></fieldset></form>
+    </body>
+</html>

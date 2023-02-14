@@ -1,0 +1,27 @@
+h1{color: rgba(102, 48, 12, 0.931);text-align: center;}
+
+.end{margin-left: auto;}
+
+#ad{float: left;}
+
+label{width: 150px;display: inline-block;color:rgba(206, 109, 18, 0.904)}
+
+input,label,fieldset,textarea{margin-bottom: 10px;}
+
+form{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+#externe{margin: auto;width: 550px;}
+
+fieldset,textarea{border-radius: 10px;border:2px solid rgb(102, 48, 12)}
+
+#connaissance label{width:100px}
+
+input{border-radius: 5px;border:2px solid rgb(102, 48, 12)}
+
+legend{color:rgb(102, 48, 12)}
+
+input[type=submit],input[type=reset]{background-color: rgba(102, 48, 12,0.7);
+    color: seashell;
+    width: 90px;height: 30px;}
+
+:hover{border-color:silver;}
